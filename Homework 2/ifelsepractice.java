@@ -8,8 +8,42 @@ import java.util.Scanner;
 * can be any topic you pick :) feel free to pick some obscure or niche topics!
 * good luck!
 * */
-public class Main {
+public class ifelsepractice {
     public static void main(String[] args) {
+
+        //Math Quiz game
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Welcome to the math quiz game!");
+        System.out.println("1. What is 9x8 ?");
+        Integer ans1 = sc.nextInt();
+
+        if(ans1 == 72){
+            System.out.println("You are correct!");
+        }else{
+            System.out.println("You are wrong!");
+        }
+
+        System.out.println("2. What is 19+37?");
+        Integer ans2 = sc.nextInt();
+
+        if(ans2 == 56){
+            System.out.println("You are correct!");
+        } else{
+            System.out.println("You are wrong.");
+        }
+
+        System.out.println("3. What is 21x3 ?");
+        Integer ans3 = sc.nextInt();
+
+        if(ans3 == 63){
+            System.out.println("You are correct!");
+        } else{
+            System.out.println("You are wrong");
+        }
+
+        System.out.println("Thank you for playing!");
+
 
 
 
