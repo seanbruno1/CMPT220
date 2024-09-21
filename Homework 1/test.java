@@ -50,11 +50,14 @@ public class test {
             System.out.println("You can drink but not rent a car");
         }else if( age >= 18 %% age < 21){
             System.out.println("You can smoke but not drink");
-        }
-        else{
+        }else{
             System.out.println("You can just have soda");
         }
         }
+
+        // Class 9/17 loops
+
+        
 
     }
 
