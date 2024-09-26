@@ -17,9 +17,11 @@ public class ifelsepractice {
         System.out.println("Welcome to the math quiz game!");
         System.out.println("1. What is 9x8 ?");
         Integer ans1 = sc.nextInt();
+        Integer score = 0;
 
         if(ans1 == 72){
             System.out.println("You are correct!");
+            score++;
         }else{
             System.out.println("You are wrong!");
         }
@@ -29,6 +31,7 @@ public class ifelsepractice {
 
         if(ans2 == 56){
             System.out.println("You are correct!");
+            score++;
         } else{
             System.out.println("You are wrong.");
         }
@@ -38,11 +41,13 @@ public class ifelsepractice {
 
         if(ans3 == 63){
             System.out.println("You are correct!");
+            score++;
         } else{
             System.out.println("You are wrong");
         }
 
         System.out.println("Thank you for playing!");
+        System.out.println("Your final score is: " + score);
 
 
 
