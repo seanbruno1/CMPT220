@@ -3,6 +3,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Arraylist;
 import java.util.List;
+javac listArray.java; 
 
 
 
