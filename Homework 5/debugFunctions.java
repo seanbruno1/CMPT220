@@ -12,7 +12,7 @@ I give you two fully working method examples with and without parameters and cal
 */
 
 import java.util.Scanner;
-public class Main {
+public class debugFunctions {
     public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
 
@@ -26,6 +26,22 @@ public class Main {
 
     System.out.println("im going to print out the word Dog now.");
     printDog();
+
+    System.out.println("Problem 2");
+    System.out.println("Enter a number and I will tell you the fatorial: ");
+    Integer fact = sc.nextInt();
+    System.out.println(factorial(fact));
+
+    System.out.println("Problem 3");
+    System.out.println("Enter a number and I will tell you the sum of every other number: ");
+    int userNum2 = sc.nextInt(); 
+    System.out.println(sums(userNum2));
+
+    System.out.println("Problem 5");
+    System.out.println("Please provide a string: ");
+    String userInp = sc.nextLine();
+    reverseOrder(userInp);
+
       
     }
 
@@ -35,8 +51,46 @@ public class Main {
 
         return(zyx + tuv);
 
+    }
+
+    public static int factorial(int x){
+        Integer sum = 1;
+        for (int i = 1; i <= x; i++){
+            sum *= i; 
+            
+        }
+
+        return(sum);
 
     }
+    public static int sums(int x){
+
+        int sum2 = 0;
+
+        for (int i = 1; i <= x; i += 2) { 
+            sum2 = sum2 + i; 
+        }
+
+        return(sum2);
+    }
+    public static void reverseOrder(String x){
+
+        char ch;
+   
+        String reverse = ""; 
+
+        for (int i = 0 ; i< x.length(); i++) { 
+        ch = x.charAt(i); 
+        reverse = ch+reverse;
+        }
+
+    
+        System.out.println(reverse);
+
+
+    }
+
+   
 
   
     public static void printDog(){
