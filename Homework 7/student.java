@@ -7,6 +7,8 @@ check each of the students in main
 and see if any students match that id, if they do they get free lunch that day, yay!) compare a randomly generated id and the
 id of the student to print the appropriate response.
  */
+import java.util.Random;
+
 public class student{
     String name;
     String year;
@@ -21,7 +23,30 @@ public class student{
     
     //new method
 
-    
+    void HonorRoll(){
+        if (this.gpa >= 3.6){
+            System.out.println(this.name +" is on honor roll");
+        }else{
+            System.out.println(this.name +" is NOT honor roll");
+        }
+
+        
+
+    }
+
     //new method
 
+    Random random = new Random();
+    int randomNumber = 1000 + random.nextInt(9000); //googled how to get a 4 digit random num
+    
+    void freeLunch(){
+        if(randomNumber == this.id){
+            System.out.println(this.name + " gets free lunch!");
+        }else{
+            System.out.println(this.name + " does NOT get free lunch");
+        }
+    }
+  
+
+  
 }
